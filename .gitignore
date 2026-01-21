@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archives (original zip already unpacked)
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Local dev
+.env
+.env.local
