@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head
       </div>
     </a>
 
-    <div class="game-card game-card--locked">
+    <a href="javascript:void(0)" onclick="openGameModal('mahjong')" class="game-card game-card--available">
       <div class="game-card__icon">
         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="8" y="8" width="12" height="16" rx="1" stroke="currentColor" stroke-width="2"/>
@@ -36,15 +36,9 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();</script></head
       </div>
       <div class="game-card__content">
         <h3 class="game-card__name">Маджонг</h3>
-        <span class="game-card__status game-card__status--locked">Скоро</span>
+        <span class="game-card__status game-card__status--available">Играть</span>
       </div>
-      <div class="game-card__lock">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
-          <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </div>
-    </div>
+    </a>
 
     <div class="game-card game-card--locked">
       <div class="game-card__icon">
@@ -400,7 +394,11 @@ window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.
 const games = {
   solitaire: {
     title: 'Пасьянс',
-    url: 'https://solitaire4good.netlify.app/'
+    url: './solitaire/'
+  },
+  mahjong: {
+    title: 'Маджонг',
+    url: './mahjong/'
   }
 };
 

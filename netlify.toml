@@ -1,6 +1,18 @@
 [build]
   publish = "project14294856"
 
+# Game SPAs — each game has its own index.html
+[[redirects]]
+  from = "/solitaire/*"
+  to = "/solitaire/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/mahjong/*"
+  to = "/mahjong/index.html"
+  status = 200
+
+# Landing page fallback (must be last)
 [[redirects]]
   from = "/*"
   to = "/index.html"
